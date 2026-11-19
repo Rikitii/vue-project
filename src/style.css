@@ -4,7 +4,26 @@
   --primario_carta: #dbdbdb;
   --borde: #f0f0f0fb;
   --info: #fffffffd;
-  --fondo_img: #bbb8b8;
+
+  
+  --normal: #ffffff;
+  --fire: #f8ad3e;
+  --water: #72a4ff;
+  --grass: #0cff34d2;
+  --electric: #e6e203e5;
+  --ice: #00deee;
+  --fighting: #ff5e00;
+  --poison: #ff00eae8;
+  --ground: #b48248;
+  --flying: #00ffd5;
+  --psychic: #ff0512e5;
+  --bug: #098605;
+  --rock: #5e5331;
+  --ghost: #8400ff;
+  --dragon: #1900fffa;
+  --dark: #3a3a3a;
+  --steel: #797979;
+  --fairy: #fda1e2de;
 }
 
 body {
@@ -34,7 +53,7 @@ body {
 }
 
 .imagen {
-  background-color: var(--fondo_img);
+  background-color: #098605;
   height: 10rem;
   width: 15rem;
   border: 10px solid var(--borde);
@@ -64,7 +83,6 @@ body {
 }
 
 .img {
-  justify-content: center;
   align-items: center;
   width: 150px;
 }

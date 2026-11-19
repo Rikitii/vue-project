@@ -61,7 +61,7 @@ onUnmounted(() => {
 
 <template>
   <div>
-    <div class="carta">
+    <div class="carta" :style="{'--pokemon-type':`var(--${pokemon.types?.[0]?.type?.name})`}">
       <div class="h2">
         <h2>{{ pokemon.name }}</h2>
         <h3>#{{ pokemon.id }}</h3>
