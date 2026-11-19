@@ -33,7 +33,7 @@ onBeforeMount(() => {
 })
 
 onMounted(async () => {
-  pokemon.value = await getPokemon(70)
+  pokemon.value = await getPokemon(1)
   debilidades.value = await getDebilidades(pokemon.value.types)
 
   console.log(pokemon.value)
@@ -108,3 +108,31 @@ onUnmounted(() => {
   </div>
 
 </template>
+
+<style lang="css">
+:root{
+  --normal: #ffffff;
+  --fire: #f8ad3e;
+  --water: #72a4ff;
+  --grass: #0cff34d2;
+  --electric: #e6e203e5;
+  --ice: #00deee;
+  --fighting: #ff5e00;
+  --poison: #ff00eae8;
+  --ground: #b48248;
+  --flying: #00ffd5;
+  --psychic: #ff0512e5;
+  --bug: #098605;
+  --rock: #5e5331;
+  --ghost: #8400ff;
+  --dragon: #1900fffa;
+  --dark: #3a3a3a;
+  --steel: #797979;
+  --fairy: #fda1e2de;
+}
+
+.imagen {
+  background-color: var(--pokemon-type);
+}
+
+</style>
