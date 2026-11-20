@@ -112,6 +112,6 @@ body {
 
   position: fixed;
   left: 50%;
-  top: 90%;
-  transform: translate(-50%, -10%);
+  top: 85%;
+  transform: translate(-50%, -15%);
 }
