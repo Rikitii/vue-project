@@ -33,7 +33,7 @@ onBeforeMount(() => {
 })
 
 onMounted(async () => {
-  pokemon.value = await getPokemon(1)
+  pokemon.value = await getPokemon(12)
   debilidades.value = await getDebilidades(pokemon.value.types)
 
   console.log(pokemon.value)
@@ -103,12 +103,12 @@ onUnmounted(() => {
       <!-- stats -->
       <div class="stats">
           <div class="estadisticas">
-            <p>Vida: {{ pokemon.stats[0].base_stat }}</p>
-            <p>Ataque: {{ pokemon.stats[1].base_stat }}</p>
-            <p>Defensa: {{ pokemon.stats[2].base_stat }}</p>
-            <p>Ataque Especial: {{ pokemon.stats[3].base_stat }}</p>
-            <p>Defensa Especial: {{ pokemon.stats[4].base_stat }}</p>
-            <p>Velocidad: {{ pokemon.stats[5].base_stat }}</p>
+            <p>Vida: {{ pokemon?.stats?.[0]?.base_stat }}</p>
+            <p>Ataque: {{ pokemon?.stats?.[1]?.base_stat }}</p>
+            <p>Defensa: {{ pokemon.stats?.[2]?.base_stat }}</p>
+            <p>Ataque Especial: {{ pokemon?.stats?.[3]?.base_stat }}</p>
+            <p>Defensa Especial: {{ pokemon?.stats?.[4]?.base_stat }}</p>
+            <p>Velocidad: {{ pokemon?.stats?.[5]?.base_stat }}</p>
           </div>
       </div>
     </div>
