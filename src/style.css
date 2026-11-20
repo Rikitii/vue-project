@@ -98,3 +98,20 @@ body {
   justify-content: center;
   gap: 5px 15px;
 }
+
+.stats {
+  background-color: var(--info);
+  border: 10px solid var(--borde);
+  border-radius: 10px;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  height: 15rem;
+  width: 20rem;
+
+  position: fixed;
+  left: 50%;
+  top: 90%;
+  transform: translate(-50%, -10%);
+}
