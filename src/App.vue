@@ -33,7 +33,7 @@ onBeforeMount(() => {
 })
 
 onMounted(async () => {
-  pokemon.value = await getPokemon(5)
+  pokemon.value = await getPokemon(1)
   debilidades.value = await getDebilidades(pokemon.value.types)
 
   console.log(pokemon.value)
